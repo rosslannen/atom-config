@@ -1,0 +1,81 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-118517-26920-169v9ms.64ggncow29/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-118517-26920-169v9ms.64ggncow29/package.tgz",
+        "spec": "/tmp/d-118517-26920-169v9ms.64ggncow29/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-118517-26920-1xo63d9.sp4kju4n29"
+    ]
+  ],
+  "_from": "../d-118517-26920-169v9ms.64ggncow29/package.tgz",
+  "_id": "linter-polymer@0.0.3",
+  "_inCache": true,
+  "_location": "/linter-polymer",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-118517-26920-169v9ms.64ggncow29/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-118517-26920-169v9ms.64ggncow29/package.tgz",
+    "spec": "/tmp/d-118517-26920-169v9ms.64ggncow29/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118517-26920-169v9ms.64ggncow29/package.tgz",
+  "_shasum": "5b886be43b69a495d2e51d554e33d7fa8d38097f",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-118517-26920-169v9ms.64ggncow29/package.tgz",
+  "_where": "/tmp/apm-install-dir-118517-26920-1xo63d9.sp4kju4n29",
+  "bugs": {
+    "url": "https://github.com/opus1269/linter-polymer/issues"
+  },
+  "contributors": [
+    {
+      "name": "Michael Updike",
+      "email": "igreilly1269@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "polylint": "^2.10.1"
+  },
+  "description": "Linter plugin for Polymer elements, using polylint",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/opus1269/linter-polymer#readme",
+  "keywords": [
+    "lint",
+    "linter",
+    "Polymer",
+    "polylint",
+    "hydrolysis"
+  ],
+  "license": "MIT",
+  "main": "./lib/linter-polymer",
+  "name": "linter-polymer",
+  "optionalDependencies": {},
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "linter-polymer\n=========================\n\n[![Plugin installs!](https://img.shields.io/apm/dm/linter-polymer.svg?style=flat-square)](https://atom.io/packages/linter-polymer)\n[![Package version!](https://img.shields.io/apm/v/linter-polymer.svg?style=flat-square)](https://atom.io/packages/linter-polymer)\n\nThis plugin for [linter](https://github.com/atom-community/linter) provides an interface to [polylint](https://github.com/PolymerLabs/polylint). It will lint HTML files\n\n## Installation\nThe Linter package must be installed in order to use this plugin. If it isn't installed, please follow the instructions [here](https://github.com/atom-community/linter#how-to--installation).\n\n### Plugin installation\n```sh\n$ apm install linter-polymer\n```\n\n## Settings\nYou can configure linter-polymer by editing `~/.atom/config.cson` (choose Open Your Config in Atom menu):\n```coffee\n'linter-polymer':\n  # Lint files while typing, without the need to save\n  lintOnFly: true\n\n  # Name of the bower directory\n  bowerDir: 'bower_components'\n\n  # Display messages for all imported files\n  allMessages: false\n```\n\n## Contributing\nIf you would like to contribute enhancements or fixes, please do the following:\n\n1. Fork the plugin repository\n2. Hack on a separate topic branch created from the latest `master`\n3. Commit and push the topic branch\n4. Make a pull request\n5. Welcome to the club :sunglasses:\n\nPlease note that modifications should follow these coding guidelines:\n\n- Indent of 2 spaces\n- Code should pass [CoffeeLint](http://www.coffeelint.org/) with the provided `coffeelint.json`\n- Vertical whitespace helps readability, don't be afraid to use it\n\n**Thank you for helping out!**\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opus1269/linter-polymer.git"
+  },
+  "version": "0.0.3"
+}

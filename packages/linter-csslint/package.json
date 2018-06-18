@@ -1,0 +1,133 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-118517-23959-v7588e.8ggl1eb3xr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-118517-23959-v7588e.8ggl1eb3xr/package.tgz",
+        "spec": "/tmp/d-118517-23959-v7588e.8ggl1eb3xr/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-118517-23959-z4rk5q.4fep0evcxr"
+    ]
+  ],
+  "_from": "../d-118517-23959-v7588e.8ggl1eb3xr/package.tgz",
+  "_id": "linter-csslint@2.0.1",
+  "_inCache": true,
+  "_location": "/linter-csslint",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-118517-23959-v7588e.8ggl1eb3xr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-118517-23959-v7588e.8ggl1eb3xr/package.tgz",
+    "spec": "/tmp/d-118517-23959-v7588e.8ggl1eb3xr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118517-23959-v7588e.8ggl1eb3xr/package.tgz",
+  "_shasum": "745952cc124bf1d9ed7506e0f691b0b1bd413725",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-118517-23959-v7588e.8ggl1eb3xr/package.tgz",
+  "_where": "/tmp/apm-install-dir-118517-23959-z4rk5q.4fep0evcxr",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-csslint/issues"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "configSchema": {
+    "executablePath": {
+      "type": "string",
+      "default": "",
+      "description": "If unset a project local install of CSSLint is attempted to be used first, falling back to the bundled version. Requires a full path to `csslint` (e.g.: `/usr/bin/csslint` or `C:\\foo\\bar\\csslint.cmd`)."
+    }
+  },
+  "dependencies": {
+    "atom-linter": "^10.0.0",
+    "atom-package-deps": "^4.6.0",
+    "csslint": "^1.0.5",
+    "fs-plus": "^3.0.1"
+  },
+  "description": "Lint CSS on the fly, using csslint",
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-conventional": "^6.1.3",
+    "@commitlint/travis-cli": "^6.1.3",
+    "@semantic-release/apm-config": "^2.0.1",
+    "eslint": "^4.6.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "husky": "^0.14.3",
+    "jasmine-fix": "^1.3.0",
+    "semantic-release": "^15.1.7"
+  },
+  "engines": {
+    "atom": ">=1.4.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "globals": {
+      "atom": true
+    },
+    "env": {
+      "node": true,
+      "browser": true
+    }
+  },
+  "homepage": "https://github.com/AtomLinter/linter-csslint#readme",
+  "keywords": [
+    "csslint",
+    "css",
+    "linter",
+    "lint"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "linter-csslint",
+  "optionalDependencies": {},
+  "package-deps": [
+    "linter:2.0.0"
+  ],
+  "private": true,
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "# linter-csslint [![Build Status](https://travis-ci.org/AtomLinter/linter-csslint.svg)](https://travis-ci.org/AtomLinter/linter-csslint)\n\nThis linter plugin for [Linter](https://github.com/AtomLinter/Linter) provides\nan interface to [csslint](https://github.com/CSSLint/csslint). It will be used\nwith files that have the \"CSS\" or \"HTML\" syntax.\n\n## Installation\n\nIf the `linter` is not already installed, it will be installed for you to\nprovide a UI for the service this package provides.\n\n### Plugin installation\n\n```ShellSession\napm install linter-csslint\n```\n",
+  "readmeFilename": "README.md",
+  "release": {
+    "extends": "@semantic-release/apm-config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-csslint.git"
+  },
+  "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "version": "2.0.1"
+}

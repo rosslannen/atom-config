@@ -1,0 +1,27 @@
+"*":
+  "atom-beautify":
+    js:
+      beautify_on_save: true
+  "atom-ternjs":
+    caseInsensitive: false
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    closeDeletedFileTabs: true
+    closeEmptyWindows: false
+    excludeVcsIgnoredPaths: false
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    softWrap: true
+  "exception-reporting":
+    userId: "d2355127-8d5c-4a60-a6c3-140de7babfeb"
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+  "minimap-git-diff":
+    useGutterDecoration: true
